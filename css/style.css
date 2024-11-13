@@ -1270,3 +1270,59 @@ margin-top: 30px;
 .subpage_footer_righter_box_bottom li {
   list-style: none;
 }
+
+/*---------------------------------------------Vegan-page-------------------------------------------------------------------------------------------*/
+
+.vegan_hero {
+  margin-top:-35px;
+
+  width: var(--width-full);
+  background-image:url('https://picsum.photos/1280/650');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height:600px;
+  color:var(--color-light)
+}
+
+.vegan_hero_container {
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  gap: var(--grid-gap);
+  height:100%;
+  width: var(--width-12col);
+  margin:0 auto 0 auto;
+}
+
+
+.vegan_hero_text {
+  grid-column: 1 / span 4;
+  grid-row: 1;
+  margin-top:200px
+}
+
+.vegan_hero_text_small_header {
+  font-size:32px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.vegan_hero_text_big_header {
+  font-size:32px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.vegan_todays_recipes_headline  {
+  
+}
+
+
+.fillerbox2 {
+  height: 2000px;
+  width: 100%;
+  background-color: var(--background-color-dark-bg);
+}
+
