@@ -1316,9 +1316,108 @@ margin-top: 30px;
 }
 
 .vegan_todays_recipes_headline  {
+  height:60px;
+  color:var(--color-white); 
+  border-bottom: 1px solid var(--color-white);
+  font-size:37px;
+  font-weight: 700;
+  text-transform: uppercase;
   
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  padding: 0 0 20px 0;
+  width:var(--width-12col);
+  margin:70px auto 0 auto;  
+  margin-bottom: 20px;
 }
 
+
+.vegan_weekly_selection_box {
+  width: var(--width-12col);
+  height: auto;
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+  margin: auto auto auto;
+}
+
+.vegan_weekly_selection_box_one {
+  grid-column: 1;
+  grid-row: 1;
+  width: 650px;
+  height: 370px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.vegan_weekly_selection_box_two {
+  grid-column: 1;
+  grid-row: 1;
+  margin-top: 480px;
+  width: 650px;
+  height: 370px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.vegan_weekly_selection_box_three {
+  grid-column: 12;
+  grid-row: 1;
+  width: 440px;
+  height: 850px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.vegan_most_frequently {
+  height:60px;
+  color:var(--color-white); 
+  border-bottom: 1px solid var(--color-white);
+  font-size:37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  
+  display:flex;
+  justify-content: flex-start;
+  align-items:center;
+  padding: 0 0 20px 0;
+  width:var(--width-12col);
+  margin:70px auto 0 auto;  
+  margin-bottom: 20px;
+}
+
+/*https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp*/
+
+.vegan_most_frequently_box {
+  margin: auto auto auto;
+  width: var(--width-12col);
+  height: auto;
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+}
+
+.vegan_most_frequently_box_one {
+  height: 280px;
+  width: 360px;
+  background-color: white;
+  grid-column: 1;
+  margin-right: 60px;
+}
+
+.vegan_most_frequently_box_two {
+  height: 280px;
+  width: 360px;
+  background-color: white;
+  grid-column: 2;
+}
+
+.vegan_most_frequently_box_three {
+  height: 280px;
+  width: 360px;
+  background-color: white;
+  grid-column: 3;
+  margin-left: 60px;
+}
 
 .fillerbox2 {
   height: 2000px;
