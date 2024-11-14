@@ -1388,6 +1388,8 @@ margin-top: 30px;
 
 /*https://www.w3schools.com/howto/howto_css_image_overlay_slide.asp*/
 
+
+
 .vegan_most_frequently_box {
   margin: auto auto auto;
   width: var(--width-12col);
@@ -1402,13 +1404,49 @@ margin-top: 30px;
   background-color: white;
   grid-column: 1;
   margin-right: 60px;
+  border-radius: 5px;
 }
+
+.vegan_most_frequently_box_one_img {
+  opacity: 1;
+  height: 280px;
+  width: 360px;
+  transition: .5s ease;
+  border-radius: 5px;
+}
+
+.vegan_most_frequently_box_one_middle {
+  transition: .5s ease;
+  opacity: 0;
+}
+
+.vegan_most_frequently_box_one:hover .vegan_most_frequently_box_one_img {
+  opacity: 0.3;
+}
+
+.vegan_most_frequently_box_one:hover .vegan_most_frequently_box_one_middle {
+  opacity: 1;
+}
+
+.vegan_most_frequently_box_one_middle_text {
+  color: white;
+  font-size: 16px;
+}
+
+
 
 .vegan_most_frequently_box_two {
   height: 280px;
   width: 360px;
   background-color: white;
   grid-column: 2;
+  border-radius: 5px;
+}
+
+.vegan_most_frequently_box_two img {
+  height: 280px;
+  width: 360px;
+  border-radius: 5px;
 }
 
 .vegan_most_frequently_box_three {
@@ -1417,7 +1455,15 @@ margin-top: 30px;
   background-color: white;
   grid-column: 3;
   margin-left: 60px;
+  border-radius: 5px;
 }
+
+.vegan_most_frequently_box_three img {
+  height: 280px;
+  width: 360px;
+  border-radius: 5px;
+}
+
 
 .vegan_most_frequently_box_four {
   height: 280px;
@@ -1427,7 +1473,16 @@ margin-top: 30px;
   grid-row: 2;
   margin-right: 60px;
   margin-top: 60px;
+  border-radius: 5px;
 }
+
+.vegan_most_frequently_box_four img {
+  height: 280px;
+  width: 360px;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+}
+
 
 .vegan_most_frequently_box_five {
   height: 280px;
@@ -1436,8 +1491,15 @@ margin-top: 30px;
   grid-column: 2;
   grid-row: 2;
   margin-top: 60px;
-
+  border-radius: 5px;
 }
+
+.vegan_most_frequently_box_five img {
+  height: 280px;
+  width: 360px;
+  border-radius: 5px;
+}
+
 
 .vegan_most_frequently_box_six {
   height: 280px;
@@ -1447,8 +1509,14 @@ margin-top: 30px;
   grid-row: 2;
   margin-left: 60px;
   margin-top: 60px;
+  border-radius: 5px;
 }
 
+.vegan_most_frequently_box_six img {
+  height: 280px;
+  width: 360px;
+  border-radius: 5px;
+}
 
 .vegan_footer {
   margin-top: 80px;
@@ -1475,13 +1543,14 @@ grid-column: 2 / span 1;
 }
 
 .vegan_footer_left_box a {
-  color: black;
+  color: var(--color_dark);
   text-decoration: none;
 }
 
 .vegan_footer_left_box li {
   list-style: none;
   margin-top: 10px;
+  color: var(--color_dark);
 }
 
 .vegan_footer_lefter_box {
@@ -1497,7 +1566,7 @@ margin-top: 30px;
 
 .vegan_footer_lefter_box a {
   text-decoration: none;
-  color: black;
+  color: var(--color_dark);
 }
 
 .vegan_footer_righter_box {
