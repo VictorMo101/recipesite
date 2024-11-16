@@ -751,6 +751,7 @@ font-size: 18px;
 }
 
 .footer {
+  margin-top: 80px;
   height: 200px;
   width: var(--width-full);
   background-color: var(--primary-color);
@@ -768,25 +769,26 @@ font-size: 18px;
 }
 
 .footer_left_box {
-margin-top: 30px;
-grid-row: 2;
-grid-column: 2 / span 1;
+  margin-top: 30px;
+  grid-row: 2;
+  grid-column: 2 / span 1;
 }
 
 .footer_left_box a {
-  color: black;
+  color: var(--color_dark);
   text-decoration: none;
 }
 
 .footer_left_box li {
   list-style: none;
   margin-top: 10px;
+  color: var(--color_dark);
 }
 
 .footer_lefter_box {
   grid-column: 5;
   grid-row: 2;
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .footer_lefter_box li {
@@ -796,36 +798,46 @@ margin-top: 30px;
 
 .footer_lefter_box a {
   text-decoration: none;
-  color: black;
+  color: var(--color_dark);
 }
 
 .footer_righter_box {
-  grid-column: 9 / span 4;
+  grid-column: 9 / span 3;
   grid-row: 2;
-  margin-top: 30px;
+  margin-top: 40px;
+  direction: rtl; 
+  text-align: right; 
 }
 
 .footer_righter_box a {
   color: white;
-  text-decoration: none;
   font-size: 10px;
 }
 
 .footer_righter_box li {
   list-style: none;
-  margin-top: 10px;
 }
 
 .footer_righter_box_bottom {
-  grid-column: 9 / span 2;
+  grid-column: 11 / span 1;
   grid-row: 3;
+  margin-top: -60px;
+  direction: rtl;
+  text-align: right; 
 }
 
 .footer_righter_box_bottom li {
   list-style: none;
+  display: flex;
+  font-size: 10px;
+  color: var(--color_dark);
 }
 
-
+.footer_righter_box_bottom i {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
 
 
 /*-------------------------------Subpage-----------------------------------------------------------------------------------------------------*/
@@ -1196,6 +1208,7 @@ margin: 30px 0 0 0;
 }
 
 .subpage_footer {
+  margin-top: 80px;
   height: 200px;
   width: var(--width-full);
   background-color: var(--primary-color);
@@ -1213,25 +1226,26 @@ margin: 30px 0 0 0;
 }
 
 .subpage_footer_left_box {
-margin-top: 30px;
-grid-row: 2;
-grid-column: 2 / span 1;
+  margin-top: 30px;
+  grid-row: 2;
+  grid-column: 2 / span 1;
 }
 
 .subpage_footer_left_box a {
-  color: black;
+  color: var(--color_dark);
   text-decoration: none;
 }
 
 .subpage_footer_left_box li {
   list-style: none;
   margin-top: 10px;
+  color: var(--color_dark);
 }
 
 .subpage_footer_lefter_box {
   grid-column: 5;
   grid-row: 2;
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .subpage_footer_lefter_box li {
@@ -1241,33 +1255,45 @@ margin-top: 30px;
 
 .subpage_footer_lefter_box a {
   text-decoration: none;
-  color: black;
+  color: var(--color_dark);
 }
 
 .subpage_footer_righter_box {
-  grid-column: 9 / span 4;
+  grid-column: 9 / span 3;
   grid-row: 2;
-  margin-top: 30px;
+  margin-top: 40px;
+  direction: rtl; 
+  text-align: right; 
 }
 
 .subpage_footer_righter_box a {
   color: white;
-  text-decoration: none;
   font-size: 10px;
 }
 
 .subpage_footer_righter_box li {
   list-style: none;
-  margin-top: 10px;
 }
 
 .subpage_footer_righter_box_bottom {
-  grid-column: 9 / span 2;
+  grid-column: 11 / span 1;
   grid-row: 3;
+  margin-top: -60px;
+  direction: rtl;
+  text-align: right; 
 }
 
 .subpage_footer_righter_box_bottom li {
   list-style: none;
+  display: flex;
+  font-size: 10px;
+  color: var(--color_dark);
+}
+
+.subpage_footer_righter_box_bottom i {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
 }
 
 /*---------------------------------------------Vegan-page-------------------------------------------------------------------------------------------*/
@@ -1716,37 +1742,214 @@ margin-top: 30px;
 .vegan_most_frequently_box_four {
   height: 280px;
   width: 360px;
-  background-color: white;
   grid-column: 1;
   grid-row: 2;
-  margin-right: 60px;
   margin-top: 60px;
   border-radius: 5px;
+  position: relative; 
+  overflow: hidden;
 }
 
 .vegan_most_frequently_box_four img {
+  opacity: 1;
   height: 280px;
   width: 360px;
-  border-bottom-left-radius: 5px;
-  border-top-left-radius: 5px;
+  transition: .5s ease;
+  border-radius: 5px;
 }
+
+.vegan_most_frequently_box_four_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; 
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+}
+
+.vegan_most_frequently_box_four:hover .vegan_most_frequently_box_four_img {
+  opacity: 0.3;
+}
+
+.vegan_most_frequently_box_four:hover .vegan_most_frequently_box_four_middle {
+  opacity: 1;
+}
+
+.vegan_most_frequently_box_four_middle_text {
+  color: var(--primary-color);
+  font-size: 24px;
+  grid-column: 2 / span 12;
+  grid-row: 1;
+  margin-top: -220px;
+  position: absolute
+}
+
+.vegan_most_frequently_box_four_middle_text_small {
+  grid-column: 2 / span 11;
+  grid-row: 1;
+  margin-top: -110px;
+  position: absolute;
+  color: #EBEBEB;
+  line-height: 24px;
+}
+
+.vegan_four_button {
+  background-color: var(--color_dark);
+  border: 1px solid var(--background-color-light);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  cursor:pointer;
+  grid-column: 11;
+  grid-row: 2;
+  margin-top: 170px
+}
+
+.vegan_four_button a {
+  color: var(--color-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.vegan_four_list {
+  color: #EBEBEB;
+  list-style: none;
+  grid-column: 2 / span 8;
+  grid-row: 2;
+  margin-top: 170px
+}
+
+.vegan_four_list i {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.vegan_four_list_time {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.vegan_four_list_star {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+/*asd*/
 
 
 .vegan_most_frequently_box_five {
   height: 280px;
   width: 360px;
-  background-color: white;
   grid-column: 2;
   grid-row: 2;
   margin-top: 60px;
   border-radius: 5px;
+  position: relative; 
+  overflow: hidden;
 }
 
 .vegan_most_frequently_box_five img {
   height: 280px;
   width: 360px;
   border-radius: 5px;
+  transition: .5s ease;
+  border-radius: 5px;
 }
+
+
+.vegan_most_frequently_box_five_middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px; 
+  grid-template-columns: repeat(12, 1fr);
+  display: grid;
+}
+
+.vegan_most_frequently_box_five:hover .vegan_most_frequently_box_five_img {
+  opacity: 0.3;
+}
+
+.vegan_most_frequently_box_five:hover .vegan_most_frequently_box_five_middle {
+  opacity: 1;
+}
+
+.vegan_most_frequently_box_five_middle_text {
+  color: var(--primary-color);
+  font-size: 24px;
+  grid-column: 2 / span 12;
+  grid-row: 1;
+  margin-top: -220px;
+  position: absolute
+}
+
+.vegan_most_frequently_box_five_middle_text_small {
+  grid-column: 2 / span 11;
+  grid-row: 1;
+  margin-top: -110px;
+  position: absolute;
+  color: #EBEBEB;
+  line-height: 24px;
+}
+
+.vegan_five_button {
+  background-color: var(--color_dark);
+  border: 1px solid var(--background-color-light);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  cursor:pointer;
+  grid-column: 11;
+  grid-row: 2;
+  margin-top: 170px
+}
+
+.vegan_five_button a {
+  color: var(--color-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.vegan_five_list {
+  color: #EBEBEB;
+  list-style: none;
+  grid-column: 2 / span 8;
+  grid-row: 2;
+  margin-top: 170px
+}
+
+.vegan_five_list i {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+.vegan_five_list_time {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.vegan_five_list_star {
+  font-size: 20px;
+  color: var(--primary-color);
+}
+
+/*asd*/
 
 
 .vegan_most_frequently_box_six {
@@ -1804,7 +2007,7 @@ grid-column: 2 / span 1;
 .vegan_footer_lefter_box {
   grid-column: 5;
   grid-row: 2;
-margin-top: 30px;
+  margin-top: 30px;
 }
 
 .vegan_footer_lefter_box li {
@@ -1818,28 +2021,45 @@ margin-top: 30px;
 }
 
 .vegan_footer_righter_box {
-  grid-column: 9 / span 4;
+  grid-column: 9 / span 3;
   grid-row: 2;
-  margin-top: 30px;
+  margin-top: 40px;
+  direction: rtl; 
+  text-align: right; 
 }
 
 .vegan_footer_righter_box a {
   color: white;
-  text-decoration: none;
   font-size: 10px;
 }
 
 .vegan_footer_righter_box li {
   list-style: none;
-  margin-top: 10px;
+}
+
+.this_shant_have_a_line {
+  text-decoration: none;
 }
 
 .vegan_footer_righter_box_bottom {
-  grid-column: 9 / span 2;
+  grid-column: 11 / span 1;
   grid-row: 3;
+  margin-top: -60px;
+  direction: rtl;
+  text-align: right; 
 }
 
 .vegan_footer_righter_box_bottom li {
   list-style: none;
+  display: flex;
+  font-size: 10px;
+  color: var(--color_dark);
 }
+
+.vegan_footer_righter_box_bottom i {
+  font-size: 20px;
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
 
