@@ -402,8 +402,7 @@ body {
   color: var(--category-misc);
 }
 
-/* Changed this from p to a to experiment with button*/
-.category_selection_box_options_snacks a {
+.category_selection_box_options_snacks p {
   color: var(--category-misc);
   text-transform: uppercase;
   font-weight: 700;
@@ -1401,10 +1400,13 @@ margin-top: 30px;
 .vegan_most_frequently_box_one {
   height: 280px;
   width: 360px;
-  background-color: white;
   grid-column: 1;
   margin-right: 60px;
   border-radius: 5px;
+
+  position: relative; /* Add this to position child elements */
+  overflow: hidden;
+
 }
 
 .vegan_most_frequently_box_one_img {
@@ -1418,6 +1420,17 @@ margin-top: 30px;
 .vegan_most_frequently_box_one_middle {
   transition: .5s ease;
   opacity: 0;
+
+  position: absolute; /* Position overlay on top of the image */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: add semi-transparent background */
+  border-radius: 5px; /* Match the border-radius */
 }
 
 .vegan_most_frequently_box_one:hover .vegan_most_frequently_box_one_img {
@@ -1431,6 +1444,10 @@ margin-top: 30px;
 .vegan_most_frequently_box_one_middle_text {
   color: white;
   font-size: 16px;
+  text-align:left;
+  padding: 20px;
+  margin-top: 220px;
+  
 }
 
 
