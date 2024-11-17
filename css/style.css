@@ -1321,7 +1321,6 @@ margin: 30px 0 0 0;
   margin:0 auto 0 auto;
 }
 
-
 .vegan_hero_text {
   grid-column: 1 / span 4;
   grid-row: 1;
@@ -1362,7 +1361,6 @@ margin: 30px 0 0 0;
   margin-bottom: 20px;
 }
 
-
 .vegan_weekly_selection_box {
   width: var(--width-12col);
   height: auto;
@@ -1378,6 +1376,86 @@ margin: 30px 0 0 0;
   height: 370px;
   background-color: white;
   border-radius: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  display: grid;
+}
+
+.vegan_weekly_selection_box_one img  {
+  height: 370px;
+  width: 325px;
+  border-bottom-left-radius: 5px ;
+  border-top-left-radius: 5px;
+  object-fit: cover;
+}
+
+.vegan_weekly_selection_box_one_text {
+  grid-column: 2 / span 10;
+  grid-row: 1;
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px;
+  color: var(--color_dark);
+}
+
+.vegan_weekly_selection_box_one_text_small {
+  grid-column: 2 / span 9;
+  grid-row: 1;
+  margin-top: 100px;
+  padding: 10px;
+  color: var(--color_dark);
+  line-height: 24px;
+}
+
+.vegan_weekly_fancy_line_one {
+height: 2px;
+width: 300px;
+margin-top: 100px;
+margin-left: 10px;
+grid-column: 2 / span 12;
+grid-row: 1;
+background-color: var(--color_dark);
+}
+
+.vegan_weekly_selection_box_one ul {
+  grid-column: 2 / span 6;
+  grid-row: 1;
+  padding: 10px;
+  margin-top: 305px;
+  list-style: none;
+}
+
+.vegan_weekly_selection_box_one i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.vegan_weekly_stars_one {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.vegan_weekly_button_one {
+  background-color: var(--color_dark);
+  border: 1px solid var(--background-color-light);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  cursor:pointer;
+  grid-column: 10;
+  grid-row: 1;
+  height: 40px;
+  margin-top: 320px;
+  margin-left: 10px;
+}
+
+.vegan_weekly_button_one a {
+  color: var(--color-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .vegan_weekly_selection_box_two {
@@ -1388,6 +1466,86 @@ margin: 30px 0 0 0;
   height: 370px;
   background-color: white;
   border-radius: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  display: grid;
+}
+
+.vegan_weekly_selection_box_two img  {
+  height: 370px;
+  width: 325px;
+  border-bottom-left-radius: 5px ;
+  border-top-left-radius: 5px;
+  object-fit: cover;
+}
+
+.vegan_weekly_selection_box_two_text {
+  grid-column: 2 / span 10;
+  grid-row: 1;
+  font-size: 37px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px;
+  color: var(--color_dark);
+}
+
+.vegan_weekly_selection_box_two_text_small {
+  grid-column: 2 / span 9;
+  grid-row: 1;
+  margin-top: 100px;
+  padding: 10px;
+  color: var(--color_dark);
+  line-height: 24px;
+}
+
+.vegan_weekly_fancy_line_two {
+height: 2px;
+width: 300px;
+margin-top: 100px;
+margin-left: 10px;
+grid-column: 2 / span 12;
+grid-row: 1;
+background-color: var(--color_dark);
+}
+
+.vegan_weekly_selection_box_two ul {
+  grid-column: 2 / span 6;
+  grid-row: 1;
+  padding: 10px;
+  margin-top: 305px;
+  list-style: none;
+}
+
+.vegan_weekly_selection_box_two i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.vegan_weekly_stars_two {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.vegan_weekly_button_two {
+  background-color: var(--color_dark);
+  border: 1px solid var(--background-color-light);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  cursor:pointer;
+  grid-column: 10;
+  grid-row: 1;
+  height: 40px;
+  margin-top: 320px;
+  margin-left: 10px;
+}
+
+.vegan_weekly_button_two a {
+  color: var(--color-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .vegan_weekly_selection_box_three {
@@ -1397,6 +1555,81 @@ margin: 30px 0 0 0;
   height: 850px;
   background-color: white;
   border-radius: 5px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto auto;
+  display: grid;
+}
+
+.vegan_weekly_selection_box_three img {
+  width: 440px;
+  height: 425px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  object-fit: cover;
+}
+
+.vegan_weekly_selection_box_three_text {
+  font-size: 37px;
+  font-weight: 700;
+  grid-column: 1 / span 4;
+  padding: 10px;
+  margin-top: -5px;
+  color: var(--color_dark);
+}
+
+.vegan_weekly_fancy_line_three {
+height: 2px;
+width: 420px;
+margin-left: 10px;
+grid-column: 1 / span 12;
+background-color: var(--color_dark);
+margin-top: -5px;
+}
+
+.vegan_weekly_selection_box_three_text_small {
+  grid-column: 1;
+  padding: 10px;
+  color: var(--color_dark);
+  line-height: 24px;
+}
+
+.vegan_weekly_selection_box_three ul {
+  grid-column: 1 / span 6;
+  padding: 10px;
+  list-style: none;
+  margin-top: 185px;
+}
+
+.vegan_weekly_selection_box_three i {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.vegan_weekly_stars_three {
+  color: var(--primary-color);
+  font-size: 20px;
+}
+
+.vegan_weekly_button_three {
+  background-color: var(--color_dark);
+  border: 1px solid var(--background-color-light);
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 8px 16px;
+  cursor:pointer;
+  grid-column: 1;
+  width: 80px;
+  height: 40px;
+  margin-left: 345px;
+  margin-top: -53px;
+} /*buttons seems to act on their own a lot, as in they change shapes and i havent the slightest clue why*/
+
+.vegan_weekly_button_three a {
+  color: var(--color-light);
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .vegan_most_frequently {
