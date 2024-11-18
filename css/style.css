@@ -205,6 +205,7 @@ body {
 .todays_recipes_content {
   display: grid;
   grid-template-columns: repeat(4, 1fr) ;
+  grid-template-rows: auto;
   gap:var(--grid-gap);
   height: fit-content;
   margin:30px auto 0 auto;
@@ -2448,16 +2449,23 @@ grid-column: 2 / span 1;
 @media (max-width: 600px) {
   .category_selection_box {
     width: 500px;
-    height: 200px;
+    height: 90px;
     margin-top: 40px;
   }
 }
 
 @media (max-width: 600px) {
-  .category_selection_box_options {
-    flex-wrap: wrap;
+  .category_selection_box_options p {
+    font-size: 10px;
   }
 }
+
+@media (max-width: 600px) {
+  .category_selection_box_options a {
+    font-size: 10px;
+  }
+}
+
 
 @media (max-width: 600px) {
   .content_image_area {
@@ -2472,6 +2480,56 @@ grid-column: 2 / span 1;
     margin-left: -330px;
   }
   
+}
+
+
+
+@media (max-width: 600px) {
+  .footer {
+  height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_left_box {
+    font-size: 12px;
+    grid-column: 2 / span 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_lefter_box {
+    font-size: 12px;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_line {
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: auto;
+    grid-column: 6;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_righter_box a {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_righter_box_bottom li {
+    font-size: 4px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer_righter_box_bottom i {
+    font-size: 8px;
+  }
 }
 
 /*-------------------------------------subpage-----------------------------------------------*/
