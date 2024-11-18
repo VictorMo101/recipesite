@@ -3036,9 +3036,6 @@ grid-column: 2 / span 1;
   } 
 }
 
-
-
-
 @media (max-width: 600px) {
   .vegan_footer {
   height: 150px;
@@ -3061,7 +3058,10 @@ grid-column: 2 / span 1;
 
 @media (max-width: 600px) {
   .vegan_footer_line {
-    margin: 40px auto auto auto;
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: auto;
+    grid-column: 6;
   }
 }
 
