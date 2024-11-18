@@ -99,7 +99,7 @@ body {
   margin-top:-35px;
 
   width: var(--width-full);
-  background-image:url('https://picsum.photos/1280/650');
+  background-image:url('../pictures/ANTS2.png');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -173,6 +173,7 @@ body {
 }
 
 .todays_recipes_content_block_image img {
+  object-fit: cover;
     height: 200px;
     width:var(--width-full);
     background-size:cover;
@@ -477,7 +478,8 @@ body {
   border-radius: 5px;
   padding: 30px;
   position: absolute;
-  margin: 500px auto auto auto;
+  margin-top: 500px;
+  margin-left: -60px;
 }
 
 .content_image_box_top_text {
@@ -597,17 +599,11 @@ body {
 .content_area_grid_box_one_image {
   grid-column: 2 / span 12;
   grid-row: 1 / span 4;
+  width: 600px;
+  height: 440px;
+  position: relative;
+  object-fit: cover;
 }
-
-
-
-
-
-
-
-
-
-
 
 .content_area_grid_second {
   display: grid;
@@ -688,6 +684,10 @@ font-size: 18px;
 .content_area_grid_box_two_image {
   grid-column: 1 / span 7;
   grid-row: 1 / span 4;
+  width: 600px;
+  height: 440px;
+  position: relative;
+  object-fit: cover;
 }
 
 
@@ -713,6 +713,10 @@ font-size: 18px;
 .content_area_grid_box_three_image {
   grid-column: 2 / span 12;
   grid-row: 1 / span 4;
+  width: 600px;
+  height: 420px;
+  object-fit: cover;
+  position: relative;
 }
 
 .content_area_grid_box_three_box {
@@ -2409,12 +2413,18 @@ grid-column: 2 / span 1;
 
 @media (max-width: 600px) {
   .hero-text {
-    grid-column: 2 / span 3;
+    grid-column: 2 / span 6;
   }
 }
 
 @media (max-width: 600px) {
   .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-container {
     width: 600px;
   }
 }
@@ -2434,8 +2444,27 @@ grid-column: 2 / span 1;
 }
 
 @media (max-width: 600px) {
-  .todays_recipes_content {
+  .todays_recipes_headline h2 {
+    margin-bottom: -30px;
+  }
+}
 
+@media (max-width: 600px) {
+  .todays_recipes_content {
+    width: 240px;
+    height: 400px;
+    grid-template-columns: repeat(2, 1fr);
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .todays_recipes_content_block {
+    width: 240px;
+    height: 370px;
+    margin-left: 10px;
+    margin-top: 10px;
   }
 }
 
@@ -2443,6 +2472,13 @@ grid-column: 2 / span 1;
   .category_selection {
     font-size: 22px;
     width: 500px;
+    margin-top: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .category_selection h2 {
+    margin-bottom: -30px;
   }
 }
 
@@ -2471,7 +2507,6 @@ grid-column: 2 / span 1;
   .content_image_area {
     width: auto;
   }
-  
 }
 
 
@@ -2482,7 +2517,110 @@ grid-column: 2 / span 1;
   
 }
 
+@media (max-width: 600px) {
+  .content_area_title {
+    font-size: 22px;
+    width: 500px;
+    margin-left: 50px;
+  }
+}
 
+@media (max-width: 600px) {
+  .content_area_title h2 {
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_first {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_one {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_one_box {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_one_image {
+  grid-row: 2;    
+  grid-column: 1;
+  width: 500px;
+  }
+}
+
+/*asd2*/
+
+@media (max-width: 600px) {
+  .content_area_grid_second {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_two {
+    width: 500px;
+    margin-top: 350px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_two_box {
+    width: 500px;
+    margin-left: -500px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_two_image {
+  grid-row: 2;    
+  grid-column: 1;
+  width: 500px;
+
+  }
+}
+
+/*asd3*/
+
+@media (max-width: 600px) {
+  .content_area_grid_third {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_three {
+    width: 500px;
+    margin-top: 350px;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_three_box {
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_area_grid_box_three_image {
+  grid-row: 2;    
+  grid-column: 1;
+  width: 500px;
+  height: 350px;
+  }
+}
+
+/*asd*/
 
 @media (max-width: 600px) {
   .footer {
