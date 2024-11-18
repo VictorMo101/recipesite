@@ -51,7 +51,7 @@ body {
 .container {
   background-color:var(--background-color-dark-bg);
   height: auto;
-  width:var(--width-full);
+  width: 100%;
 }
 
 .navigation {
@@ -1596,6 +1596,7 @@ background-color: var(--color_dark);
   padding: 10px;
   margin-top: -5px;
   color: var(--color_dark);
+  text-transform: uppercase;
 }
 
 .vegan_weekly_fancy_line_three {
@@ -1608,6 +1609,13 @@ margin-top: -5px;
 }
 
 .vegan_weekly_selection_box_three_text_small {
+  grid-column: 1;
+  padding: 10px;
+  color: var(--color_dark);
+  line-height: 24px;
+}
+
+.vegan_weekly_selection_box_three_text_small_media {
   grid-column: 1;
   padding: 10px;
   color: var(--color_dark);
@@ -2393,6 +2401,337 @@ grid-column: 2 / span 1;
   font-size: 20px;
   margin-left: 20px;
   margin-top: 5px;
+}
+
+
+/*------------------index----------------------------*/
+
+@media (max-width: 600px) {
+  .hero-text {
+    grid-column: 2 / span 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .todays_recipe {
+    width: 600px;
+  }
+}
+
+@media (max-width: 600px) {
+  .todays_recipes_headline {
+    font-size: 22px;
+    width: 500px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .todays_recipes_content {
+
+  }
+}
+
+@media (max-width: 600px) {
+  .category_selection {
+    font-size: 22px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .category_selection_box {
+    width: 500px;
+    height: 200px;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .category_selection_box_options {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_image_area {
+    width: auto;
+  }
+  
+}
+
+
+@media (max-width: 600px) {
+  .content_image_box {
+    margin-left: -330px;
+  }
+  
+}
+
+/*-------------------------------------subpage-----------------------------------------------*/
+
+
+
+/*-------------------------------------veganpage-----------------------------------------------*/
+
+@media (max-width: 600px) {
+  .vegan_hero_container {
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_hero_text {
+    grid-column: 2 / span 4;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_todays_recipes_headline {
+    font-size: 22px;
+    width: 500px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_todays_recipes_headline h2 {
+    margin-bottom: -30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_one {
+    height: 250px;
+    width: 500px;
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_one img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_one_text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_one_text_small {
+    font-size: 14px;
+    margin-top: 90px;
+    grid-column: 2 / span 9;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_fancy_line_one {
+    margin-top: 90px;
+    width: 230px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_one ul {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_time_one {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_time_one i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_stars_one {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_button_one {
+    margin-top: 200px;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_two {
+    height: 250px;
+    width: 500px;
+    margin-left: 50px;
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_two img {
+    height: 250px;
+    width: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_two_text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_two_text_small {
+    font-size: 14px;
+    margin-top: 90px;
+    grid-column: 2 / span 9;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_fancy_line_two {
+    margin-top: 90px;
+    width: 230px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_two ul {
+    margin-top: 190px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_time_two {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_time_two i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_stars_two {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_button_two {
+    margin-top: 200px;
+    margin-left: -10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_three {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: 50px;
+    margin-top: 50px;
+    width: 500px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_three img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_three_text {
+    font-size: 30px;
+    grid-column: 2;
+    margin-left: -240px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_fancy_line_three {
+    grid-column: 2;
+    margin-left: -230px;
+    width: 230px;
+    margin-top: -160px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_three_text_small {
+    font-size: 14px;
+    grid-column: 2;
+    margin-left: -240px;
+    margin-top: -160px;
+    display: none;
+  }
+}
+
+@media (min-width: 601px) {
+  .vegan_weekly_selection_box_three_text_small_media {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_three_text_small_media {
+    font-size: 14px;
+    grid-column: 2;
+    margin-left: -240px;
+    margin-top: -160px;
+    position: relative;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_button_three {
+    margin-top: -53px;
+    grid-column: 1;
+    margin-left: 411px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_selection_box_three ul {
+    margin-top: -60px;
+    margin-left: -240px;
+    grid-column: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_time_three {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_time_three i {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 600px) {
+  .vegan_weekly_stars_three {
+    font-size: 18px;
+  }
 }
 
 
