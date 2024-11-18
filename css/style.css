@@ -889,7 +889,7 @@ font-size: 18px;
 }
 
 
-.recipe-hero-container {/* child to follow to 12 column */
+.recipe-hero-container {
   display:grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto auto auto;
@@ -1231,7 +1231,7 @@ margin: 30px 0 0 0;
 
 .fillerbox {
  width: 100%;
- height: 500px;
+ height: 200px;
 }
 
 .subpage_footer {
@@ -1657,7 +1657,7 @@ margin-top: -5px;
   height: 40px;
   margin-left: 345px;
   margin-top: -53px;
-} /*buttons seems to act on their own a lot, as in they change shapes and i havent the slightest clue why*/
+} 
 
 .vegan_weekly_button_three a {
   color: var(--color-light);
@@ -2316,7 +2316,7 @@ margin-top: -5px;
 }
 
 .vegan_footer {
-  margin-top: 80px;
+  margin-top: 100px;
   height: 200px;
   width: var(--width-full);
   background-color: var(--primary-color);
@@ -2557,7 +2557,7 @@ grid-column: 2 / span 1;
   }
 }
 
-/*asd2*/
+
 
 @media (max-width: 600px) {
   .content_area_grid_second {
@@ -2589,8 +2589,6 @@ grid-column: 2 / span 1;
   }
 }
 
-/*asd3*/
-
 @media (max-width: 600px) {
   .content_area_grid_third {
     width: 500px;
@@ -2619,8 +2617,6 @@ grid-column: 2 / span 1;
   height: 350px;
   }
 }
-
-/*asd*/
 
 @media (max-width: 600px) {
   .footer {
@@ -2672,7 +2668,185 @@ grid-column: 2 / span 1;
 
 /*-------------------------------------subpage-----------------------------------------------*/
 
+@media (max-width: 600px) {
+  .root {
+    width: var(--width-full);
+  }
 
+  .recipe-hero-text {
+    margin-left: 50px;
+  }
+
+  .recipe_details_ingredient_block_info_three {
+    margin-left: 50px;
+    width: 500px;
+  }
+
+  .recipe_details {
+    width: 600px;
+  }
+
+  .recipe_details_ingredients {
+    height: 200px;
+    width: 500px;
+    margin-left: 50px;
+  }
+
+  .recipe_details_ingredient_block_checkboxes {
+    margin-top: -15px;
+  }
+
+  .recipe_details_ingredient_block_buttons {
+    margin-left: 50px;
+    margin-top: -20px
+  }
+
+  .recipe_details_right {
+    grid-column: 1 / span 12;
+    margin-top: 20px;
+  }
+
+  .recipe_instruction_one_header {
+    font-size: 22px;
+    width: 500px;
+  }
+
+  .recipe_instruction_one_header h2 {
+  margin-bottom: -30px;
+  }
+
+  .recipe_instruction_one_header h3 {
+    margin-bottom: -30px;
+    font-size: 34px;
+    margin-left: 55px;
+  }
+
+  .recipe_instruction_one_intruction_and_ingredient_box {
+    width: 600px;
+  }
+
+  .recipe_instruction_one_intruction_and_ingredient_box_left {
+    grid-column: 1 / span 6;
+    margin-left: 50px;
+  }
+
+  .recipe_instruction_one_intruction_and_ingredient_box_left ul li {
+    font-size: 12px;
+  }
+
+  .recipe_instruction_one_intruction_and_ingredient_box_right {
+    grid-column: 8 / span 8 ;
+  }
+
+  .recipe_instruction_one_intruction_and_ingredient_box_right ul li {
+    font-size: 12px;
+    direction: rtl; 
+    text-align: right; 
+    margin-right: 65px;
+  }
+
+  .recipe_instruction_two_header {
+    font-size: 22px;
+    width: 500px;
+  }
+
+  .recipe_instruction_two_header h2 {
+  margin-bottom: -30px;
+  }
+
+  .recipe_instruction_two_header h3 {
+    margin-bottom: -30px;
+    font-size: 34px;
+    margin-left: 55px;
+  }
+
+  .recipe_instruction_two_intruction_and_ingredient_box {
+    width: 600px;
+  }
+
+  .recipe_instruction_two_intruction_and_ingredient_box_lefter {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+    margin-left: 20px;
+  }
+
+  .recipe_instruction_two_intruction_and_ingredient_box_left {
+    grid-column: 3 / span 4;
+    grid-row: 1;
+  }
+
+  .recipe_instruction_two_intruction_and_ingredient_box_left ul li {
+    font-size: 12px;
+  }
+
+  .recipe_instruction_two_intruction_and_ingredient_box_right {
+    grid-column: 8 / span 8 ;
+  }
+
+  .recipe_instruction_two_intruction_and_ingredient_box_right ul li {
+    font-size: 12px;
+    direction: rtl; 
+    text-align: right; 
+    margin-right: 65px;
+  }
+
+  /* angående det der step stas, kan ikke få det til at virke ordentligt, fordi jeg har gjort det forkert. Tænker lidt jeg skulle lave alt til divs, fremfor ul li
+  også manuelt indsæt dem ind i gridet. Føler lidt det ville havde været nemmere og fungeret bedre, fordi lige pt skaber det problemer hvis man bl.a. ændre teksten. Så yes,
+  det liner ikke helt præcist op med teksten, i mobil versionen, selvom det skulle, men ultimativt, kan ikke få det til at pas, dog tænker nok at med min nuværende viden
+  ville jeg kunne lave det bedre. Har dog ikke tid til at omskrive alt koden indenfor steps så det er hvad det er. */
+
+  .fillerbox {
+    height: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage_footer {
+  height: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage_footer_left_box {
+    font-size: 12px;
+    grid-column: 2 / span 3;
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage_footer_lefter_box {
+    font-size: 12px;
+    
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage_footer_line {
+    margin-left: 50px;
+    margin-top: 40px;
+    margin-bottom: auto;
+    grid-column: 6;
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage_footer_righter_box a {
+    font-size: 4px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage_footer_righter_box_bottom li {
+    font-size: 4px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .subpage_footer_righter_box_bottom i {
+    font-size: 8px;
+  }
+}
 
 /*-------------------------------------veganpage-----------------------------------------------*/
 
@@ -2968,8 +3142,6 @@ grid-column: 2 / span 1;
   }  
 }
 
-/*asd1*/
-
 @media (max-width: 600px) {
   .vegan_most_frequently_box_one {
     height: 200px;
@@ -3010,8 +3182,6 @@ grid-column: 2 / span 1;
   } 
 }
 
-/*asd2*/
-
 @media (max-width: 600px) {
   .vegan_most_frequently_box_two {
     height: 200px;
@@ -3051,8 +3221,6 @@ grid-column: 2 / span 1;
     margin-top: 120px
   } 
 }
-
-/*asd3*/
 
 @media (max-width: 600px) {
   .vegan_most_frequently_box_three {
@@ -3097,8 +3265,6 @@ grid-column: 2 / span 1;
   } 
 }
 
-/*asd4*/
-
 @media (max-width: 600px) {
   .vegan_most_frequently_box_four {
     grid-column: 2;
@@ -3142,8 +3308,6 @@ grid-column: 2 / span 1;
   } 
 }
 
-/*asd5*/
-
 @media (max-width: 600px) {
   .vegan_most_frequently_box_five {
     grid-column: 1;
@@ -3186,8 +3350,6 @@ grid-column: 2 / span 1;
     margin-top: 120px
   } 
 }
-
-/*asd6*/
 
 @media (max-width: 600px) {
   .vegan_most_frequently_box_six {
